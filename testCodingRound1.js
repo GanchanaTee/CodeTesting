@@ -10,6 +10,7 @@ function isEqual(value, expectedValue) {
    * Encode Text
    * Return - String that encoded
    */
+  
   function encode(input) {
       let splitInput = input.split('');
       let j = 1;
