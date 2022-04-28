@@ -1,8 +1,10 @@
 {
   "dependencies": {
+    "jest": "^28.0.2",
     "prompt-sync": "^4.2.0"
   },
   "scripts": {
-    "start": "node Pok-Deng.js"
+    "start": "node Pok-Deng.js",
+    "test": "jest"
   }
 }
