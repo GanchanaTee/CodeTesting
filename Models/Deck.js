@@ -1,3 +1,10 @@
+class Card {
+    constructor(suit, value) {
+        this.suit = suit,
+        this.value = value
+    }
+}
+
 class Deck {
     constructor() {
         this.deck = [];
@@ -11,10 +18,10 @@ class Deck {
         this.deck = [];
         const suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades'];
         const values = ['Ace', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'Jack', 'Queen', 'King'];
-
-        for (let suit in suits) {
-            for (let value in values) {
-                this.deck.push(suits[suit] + "-" + values[value]);
+        for (let i = 0; i < suits.length ; i++) {
+            for (let j = 0; j < values.length ; j++) {
+                const card = new Card(suits[i], values[j])
+                this.deck.push(card);
             };
         };
     };
@@ -41,5 +48,5 @@ class Deck {
 };
 
 module.exports = {
-    Deck
+    Card, Deck
 };
